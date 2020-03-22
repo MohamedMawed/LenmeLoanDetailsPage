@@ -5,13 +5,16 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "android:clean": "cd android/ & ./gradlew clean & cd ..",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-native-device-info": "^5.5.3",
+    "react-native-extra-dimensions-android": "^1.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
