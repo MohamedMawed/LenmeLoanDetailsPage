@@ -11,7 +11,7 @@ const colors = {
   red: '#FF4040',
   green: '#00D034',
   lightBlue: '#92C2FF',
-  buttonGradient: ['#B534FF', '#8562FD', '#568FFC'],
+  buttonGradient: ['#568FFC', '#8562FD', '#B534FF'],
 };
 
 export {colors};

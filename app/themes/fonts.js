@@ -1,4 +1,6 @@
+import {Platform, PixelRatio} from 'react-native';
 import {colors} from './colors';
+import {metrics} from './metrics';
 
 const type = {
   heavy: 'Avenir-Heavy',
@@ -7,18 +9,30 @@ const type = {
   book: 'Avenir-Book',
 };
 
+// based on iphone 5s's scale
+const scale = metrics.screenWidth / 500;
+
+function normalize(size) {
+  const newSize = size * scale;
+  if (Platform.OS === 'ios') {
+    return Math.round(PixelRatio.roundToNearestPixel(newSize));
+  } else {
+    return Math.round(PixelRatio.roundToNearestPixel(newSize)) - 2;
+  }
+}
+
 const size = {
-  h1: 38,
-  h2: 34,
-  h3: 30,
-  h4: 26,
-  h5: 20,
-  h6: 19,
-  input: 18,
-  regular: 14,
-  medium: 12,
-  small: 10,
-  tiny: 8.5,
+  h1: normalize(38),
+  h2: normalize(34),
+  h3: normalize(30),
+  h4: normalize(24),
+  h5: normalize(20),
+  h6: normalize(18),
+  input: normalize(15),
+  regular: normalize(14),
+  medium: normalize(12),
+  small: normalize(13),
+  tiny: normalize(8.5),
 };
 
 const styles = {
