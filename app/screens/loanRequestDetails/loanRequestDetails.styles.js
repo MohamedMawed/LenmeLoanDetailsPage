@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
   userSectionContainer: {
     flexDirection: 'row',
-    height: metrics.screenHeight * 0.15,
+    height: metrics.screenHeight * 0.13,
   },
   avatarContainer: {
     flex: 4.3,
