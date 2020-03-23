@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
   userSectionContainer: {
     flexDirection: 'row',
-    height: metrics.screenHeight * 0.18,
+    height: metrics.screenHeight * 0.12,
   },
   avatarContainer: {
     flex: 4.3,
@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
   },
   userName: {
-    flex: 5,
-    fontSize: fonts.size.h5,
+    flex: 8,
+    fontSize: fonts.size.h4,
     fontFamily: fonts.type.heavy,
   },
   lenmeScorePart: {
@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     width: '100%',
+    marginVertical: -8,
   },
   lenmeScoreValue: {
     marginHorizontal: 5,
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
   loanFinanCardRow: {
     flexDirection: 'row',
     width: '100%',
-    marginTop: 15,
+    marginTop: 10,
     justifyContent: 'space-between',
   },
   offerContainer: {
@@ -65,22 +66,23 @@ const styles = StyleSheet.create({
     color: colors.purple,
   },
   offerItemFirstValue: {
-    fontSize: fonts.size.h6,
+    fontSize: fonts.size.h4,
+    paddingHorizontal: 5,
   },
   offerItemSecondValue: {
     fontSize: fonts.size.h2,
   },
   offerValueContainer: {
     flexDirection: 'row',
-    marginTop: 10,
+    marginTop: 5,
   },
   recommandedRateText: {
     fontSize: fonts.size.input,
-    marginTop: 10,
+    marginTop: 5,
     color: colors.lightGray,
   },
   progressContainer: {
-    marginTop: 20,
+    marginTop: 10,
     height: 8,
     borderRadius: 5,
     width: metrics.screenWidth - 60,

@@ -34,6 +34,7 @@ const metrics = {
   screenWidth: width < height ? width : height,
   screenHeight: width < height ? height : width,
   borderRadius: 8,
+  BtnBorderRadius: 5,
 };
 
 export {metrics};
