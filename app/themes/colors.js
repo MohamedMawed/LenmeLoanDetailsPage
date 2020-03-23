@@ -6,6 +6,7 @@ const colors = {
   // app colors
   orange: '#FFA831',
   purple: '#BD2EFF',
+  mediumGray: '#D8D8D8',
   lighterGray: '#F8F8F8',
   blue: '#5D6AFF',
   red: '#FF4040',

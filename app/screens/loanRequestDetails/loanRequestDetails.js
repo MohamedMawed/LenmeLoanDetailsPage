@@ -17,10 +17,7 @@ import {Button, ButtonGradient} from '../../components/button';
 const LoanRequestDetails = () => {
   return (
     <>
-      <StatusBar
-        barStyle="dark-content"
-        style={{backgroundColor: colors.lighterGray}}
-      />
+      <StatusBar backgroundColor={colors.lighterGray} />
       <SafeAreaView>
         <View style={styles.paddingHorizontal}>
           <HeaderWithBack />
@@ -157,7 +154,7 @@ const LoanRequestDetails = () => {
             <Text style={styles.recommandedRateText}>0%</Text>
             <Text style={styles.recommandedRateText}>100%</Text>
           </View>
-          <View style={{height: 15}} />
+          <View style={{height: 10}} />
           <Button title={'Dismiss'} titleColor={colors.red} />
           <View style={{height: 15}} />
           <ButtonGradient title={'Make Offer'} titleColor={colors.white} />
