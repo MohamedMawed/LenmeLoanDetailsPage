@@ -157,7 +157,7 @@ const LoanRequestDetails = () => {
             <Text style={styles.recommandedRateText}>0%</Text>
             <Text style={styles.recommandedRateText}>100%</Text>
           </View>
-          <View style={{height: 10}} />
+          <View style={{height: 15}} />
           <Button title={'Dismiss'} titleColor={colors.red} />
           <View style={{height: 15}} />
           <ButtonGradient title={'Make Offer'} titleColor={colors.white} />

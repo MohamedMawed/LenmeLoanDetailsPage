@@ -28,9 +28,9 @@ const size = {
   h4: normalize(24),
   h5: normalize(20),
   h6: normalize(18),
-  input: normalize(15),
+  input: normalize(20),
   regular: normalize(14),
-  medium: normalize(12),
+  medium: normalize(13),
   small: normalize(13),
   tiny: normalize(8.5),
 };

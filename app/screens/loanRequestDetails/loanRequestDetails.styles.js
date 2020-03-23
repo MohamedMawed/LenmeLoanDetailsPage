@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   offerItemFirstValue: {
     fontSize: fonts.size.h4,
-    paddingHorizontal: 5,
+    paddingHorizontal: 2,
   },
   offerItemSecondValue: {
     fontSize: fonts.size.h2,
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   },
   recommandedRateText: {
     fontSize: fonts.size.input,
-    marginTop: 5,
+    marginTop: 3,
     color: colors.lightGray,
   },
   progressContainer: {
