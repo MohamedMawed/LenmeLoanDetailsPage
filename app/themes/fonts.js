@@ -14,11 +14,7 @@ const scale = metrics.screenWidth / 500;
 
 function normalize(size) {
   const newSize = size * scale;
-  if (Platform.OS === 'ios') {
-    return Math.round(PixelRatio.roundToNearestPixel(newSize));
-  } else {
-    return Math.round(PixelRatio.roundToNearestPixel(newSize)) - 2;
-  }
+  return Math.round(PixelRatio.roundToNearestPixel(newSize));
 }
 
 const size = {
@@ -28,7 +24,7 @@ const size = {
   h4: normalize(24),
   h5: normalize(20),
   h6: normalize(18),
-  input: normalize(20),
+  input: normalize(19),
   regular: normalize(14),
   medium: normalize(13),
   small: normalize(13),

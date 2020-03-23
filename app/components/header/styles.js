@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import {metrics} from '../../themes';
 
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    height: 60,
+    height: metrics.screenHeight * 0.06,
     justifyContent: 'center',
     alignItems: 'center',
   },
