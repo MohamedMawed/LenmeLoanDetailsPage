@@ -33,7 +33,7 @@ const metrics = {
   androidMenuesSize,
   screenWidth: width < height ? width : height,
   screenHeight: width < height ? height : width,
-  borderRadius: 6,
+  borderRadius: 8,
 };
 
 export {metrics};
