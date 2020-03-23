@@ -49,7 +49,7 @@ const LoanRequestDetails = () => {
               </View>
             </View>
             <View style={{flex: 6}}>
-              <View style={{flex: 5}} />
+              <View style={{flex: 8}} />
               <View style={{flex: 14}}>
                 <Text style={styles.lenmeScoreText}>CREDIT SCORE</Text>
                 <View
@@ -119,7 +119,7 @@ const LoanRequestDetails = () => {
               </View>
             </View>
 
-            <View style={{marginLeft: 25}}>
+            <View style={{marginLeft: metrics.screenWidth * 0.09}}>
               <Text style={styles.offerItemTitle}>Payback Period</Text>
               <View style={styles.offerValueContainer}>
                 <Text style={styles.offerItemSecondValue}>1</Text>
