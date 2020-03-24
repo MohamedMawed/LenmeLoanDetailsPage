@@ -5,22 +5,44 @@ import {Button, ButtonGradient} from '../../components/button';
 import {colors, metrics} from '../../themes';
 import LinearGradient from 'react-native-linear-gradient';
 
-const OfferSection = () => {
+// the offer object structure
+// const intialOffer = {
+//   investmentAmount: {
+//     currency: string,
+//     amount: number,
+//   },
+//   paybackPeriod: {
+//     value: number,
+//     unit: string,
+//   },
+//   annualIntersets: number,
+//   recommandAnnualIntersets: number,
+// };
+
+const OfferSection = ({offer}) => {
   return (
     <View style={styles.offerContainer}>
       <View style={{flexDirection: 'row'}}>
         <View>
           <Text style={styles.offerItemTitle}>Investment Amount</Text>
           <View style={styles.offerValueContainer}>
-            <Text style={styles.offerItemFirstValue}>$</Text>
-            <Text style={styles.offerItemSecondValue}>970</Text>
+            <Text style={styles.offerItemFirstValue}>
+              {offer.investmentAmount.currency}
+            </Text>
+            <Text style={styles.offerItemSecondValue}>
+              {offer.investmentAmount.amount}
+            </Text>
           </View>
         </View>
         <View style={{marginLeft: metrics.screenWidth * 0.09}}>
           <Text style={styles.offerItemTitle}>Payback Period</Text>
           <View style={styles.offerValueContainer}>
-            <Text style={styles.offerItemSecondValue}>1</Text>
-            <Text style={styles.offerItemFirstValue}>month</Text>
+            <Text style={styles.offerItemSecondValue}>
+              {offer.paybackPeriod.value}
+            </Text>
+            <Text style={styles.offerItemFirstValue}>
+              {offer.paybackPeriod.unit}
+            </Text>
           </View>
         </View>
       </View>
@@ -28,10 +50,13 @@ const OfferSection = () => {
       <View style={{marginTop: 10}}>
         <Text style={styles.offerItemTitle}>Annual Intersets</Text>
         <Text style={styles.recommandedRateText}>
-          Recommanded Interset Rate: 3%
+          Recommanded Interset Rate:
+          {offer.recommandAnnualIntersets}%
         </Text>
         <View style={styles.offerValueContainer}>
-          <Text style={styles.offerItemSecondValue}>4</Text>
+          <Text style={styles.offerItemSecondValue}>
+            {offer.annualIntersets}
+          </Text>
           <Text style={styles.offerItemFirstValue}>%</Text>
         </View>
       </View>
@@ -41,22 +66,17 @@ const OfferSection = () => {
           start={{x: 0, y: 0}}
           end={{x: 1, y: 0}}
           colors={colors.buttonGradient}
-          style={styles.progressValue}
+          style={[styles.progressValue, {width: offer.annualIntersets + '%'}]}
         />
         <View style={styles.progressCircle} />
       </View>
-      <View
-        style={{
-          width: metrics.screenWidth - 60,
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-        }}>
+      <View style={styles.limitContainer}>
         <Text style={styles.recommandedRateText}>0%</Text>
         <Text style={styles.recommandedRateText}>100%</Text>
       </View>
-      <View style={{height: 10}} />
+      <View style={styles.seperator} />
       <Button title={'Dismiss'} titleColor={colors.red} />
-      <View style={{height: 15}} />
+      <View style={styles.seperator1} />
       <ButtonGradient title={'Make Offer'} titleColor={colors.white} />
     </View>
   );

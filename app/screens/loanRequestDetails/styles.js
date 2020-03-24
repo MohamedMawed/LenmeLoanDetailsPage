@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
   progressValue: {
     borderRadius: 5,
-    width: '50%',
+    // width: '50%',
     height: '100%',
   },
   progressCircle: {
@@ -108,6 +108,17 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+  },
+  limitContainer: {
+    width: metrics.screenWidth - 60,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  seperator: {
+    height: 10,
+  },
+  seperator1: {
+    height: 15,
   },
 });
 
