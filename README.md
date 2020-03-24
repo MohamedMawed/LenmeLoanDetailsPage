@@ -14,4 +14,4 @@
 - `yarn install`: to install the packages
 - `yarn android`: to run the app on the Android simulator
 - `yarn ios`: to run the app on the iOS simulator
-- `yarn clean`: to clean the android project if you have any build issues
+- `yarn android:clean`: to clean the android project if you have any build issues
